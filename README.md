@@ -1,1 +1,1 @@
-# Beer
+# 🍺 BEER: Better Estimated Equity Reallocation
