@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    webapp:
+        build: .
+        ports:
+            - "8000:5000"
+    dev:
+        build: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - .:/home/appuser
+        environment:
+            - FLASK_DEBUG=1
+        command: /home/appuser/entrypoint-dev.sh
